@@ -25,8 +25,6 @@ Using SQL to analyze trip data, new vs. repeat passenger trends, and performance
 
 ## 3. Key Features and Highlights
 
-*(If you need explicit pointers, you could add symbols like “➡” or “•” where relevant. Here’s a simple bullet list for clarity.)*
-
 • Comprehensive analysis on **new vs. repeat** passenger trends.  
 • Month-to-month **target vs. actual** trip comparisons.  
 • Detailed breakdown of **repeat passenger** trip frequencies (2–10 trips).  
@@ -55,6 +53,8 @@ Using SQL to analyze trip data, new vs. repeat passenger trends, and performance
 - **fact_trips** joins with **dim_city** on `city_id` and with **dim_date** on `date`.  
 - **fact_passenger_summary** and **dim_repeat_trip_distribution** join with **dim_city** on `city_id` and use `month` for time-based grouping.  
 - **targets_db** tables relate to the same `city_id` and `month` fields for target comparisons.
+- 
+![image](https://github.com/user-attachments/assets/88c99e96-7b54-42e3-9295-c758611cd819)
 
 ---
 
@@ -86,6 +86,28 @@ Using SQL to analyze trip data, new vs. repeat passenger trends, and performance
      ➡ Repeat passenger frequency charts  
      ➡ Revenue distribution  
    • These visuals form the basis of the final stakeholder presentation.
+---
+## 6. Results
+
+Below are six key result areas corresponding to each business request.  
+
+1. **City-Level Fare and Trip Summary**  
+   - *![image](https://github.com/user-attachments/assets/4816311e-6a7f-4146-a9c0-16a7c1277a3a)*
+
+2. **Monthly City-Level Trips Target Performance**  
+   - *![image](https://github.com/user-attachments/assets/efce573a-41b5-488a-a70f-1d1495ce253f)*
+
+3. **City-Level Repeat Passenger Trip Frequency**  
+   - *![image](https://github.com/user-attachments/assets/b7d1ff3f-ab49-4e1d-9d7b-cf7a764d08eb)*
+
+4. **Identifying Highest and Lowest Total New Passengers**  
+   - *![image](https://github.com/user-attachments/assets/16c3976f-89cc-4ef2-9781-64b561a15f98)*
+
+5. **Month with Highest Revenue (Per City)**  
+   - *![image](https://github.com/user-attachments/assets/29ba5b7c-2b88-423a-a4ff-d8097c054b7b)*
+
+6. **Repeat Passenger Rate Analysis**  
+   - *![image](https://github.com/user-attachments/assets/b6feb475-df3a-40dd-8b77-b372ba9a9c76)*
 
 ---
 
